@@ -22,7 +22,7 @@ export function Home({ tasks }) {
 
 export default Home;
 
-export async function getStaticProps() {
+export async function getServerSideProps() {
   const response = await fetch(`${process.env.API_HOST}/tasks/`)
   const tasks = await response.json()
 
@@ -30,3 +30,4 @@ export async function getStaticProps() {
     props: { tasks },
   }
 }
+
