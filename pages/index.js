@@ -10,7 +10,7 @@ export function Home({ tasks }) {
       <ul className={styles.tasks}>
         {tasks.map(task =>
           <li key={task.id} className={styles.task}>
-            <Link href={`/${task.id}`} >
+            <Link href={`tasks/${task.id}`} >
               <a className={styles.link}>{task.title}</a>
             </Link>
           </li>

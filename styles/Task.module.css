@@ -1,0 +1,25 @@
+.task {
+  min-height: 100vh;
+  padding: 4rem 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.field  {
+  width: 100%;
+  max-width: 600px;
+  display: flex;
+justify-content: space-between;
+padding: 1rem;
+}
+.caption {
+  font-size: 1.2rem;
+}
+@media (max-width: 650px) {
+  .field {
+   flex-direction: column;
+   align-items: center;
+
+  }
+}
