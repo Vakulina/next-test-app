@@ -21,7 +21,7 @@ export default function Task({ task }) {
 };
 
 export async function getServerSideProps({ params }) {
-  const response = await fetch(`http://localhost:3000/api/tasks/${params.id}`)
+  const response = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}/tasks/${params.id}`)
   const task = await response.json()
   return {
     props: { task },
