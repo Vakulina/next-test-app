@@ -32,3 +32,51 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+Необходимо разработать приложение на Next.js. 
+
+Приложение должно показывать список всех задач, со списка задач должна быть возможность перейти на конкретную задачу. 
+
+Модель задачи состоит из заголовка, описания и даты создания.
+
+На общем списке должно быть видно только название.
+
+При выполнении задания, базу подключать не нужно, просто на сервере сделать список с тестовыми записями. 
+
+Для получения данных на фронт, необходимо реализовать ендпоинты API средствами Next.js. 
+Форму создания задачи так же делать не нужно.Вёрстка не важна.
+
+В репозиторий приложите скрины двух страниц. 
+
+Укажите ссылку на репозиторий при заполнение заявки
+
+
+
+## Небольшое учебное приложение на [Next.js](https://nextjs.org/), созданное с помощью [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app)
+
+- возможность разворачивания/сворачивания элементов древовидной структуры
+- стилизован активный элемент списка 
+
+Бэкенд расположен в директории `backend/`, а фронтенд - в `frontend/`.
+
+### Используемые технологии:
+
+#### Backend
+Простой сервер для раздачи JSON-файла с данными для отображения
+1. Node.js
+2. Express
+3. nginx
+
+#### Frontend
+1. React.js (Create React App)
+2. Хуки, функциональные компоненты
+
+####  Для запуска на локальной машине:
+- скачать содержимое ветки main
+- перейти в папку **frontend**, установить зависимости командой **npm install**, запустить локальный сервер командой **npm run start** (на порту 3000)
+
+### Проект завершен
+
+Проект задеплоен на [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
+
+#### :link: Деплой : https://next-test-app-theta.vercel.app/
