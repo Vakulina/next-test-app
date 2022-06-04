@@ -23,7 +23,7 @@ export function Home({ tasks }) {
 export default Home;
 
 export async function getStaticProps() {
-  const response = await fetch(`${process.env.NEXT_PUBLIC_API_HOST}/tasks/`)
+  const response = await fetch(`${process.env.API_HOST}/tasks/`)
   const tasks = await response.json()
 
   return {
